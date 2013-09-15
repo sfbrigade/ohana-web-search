@@ -1,5 +1,5 @@
 stack = Faraday::Builder.new do |builder|
-  builder.use Faraday::HttpCache
+  builder.use Faraday::HttpCache, store: :dalli_store
   builder.use Ohanakapa::Response::RaiseError
   builder.adapter Faraday.default_adapter
 end
