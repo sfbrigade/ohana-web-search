@@ -303,6 +303,7 @@ DEPENDENCIES
   html5shiv-rails
   jquery-rails (>= 1.0.17)
   json
+  kgio
   letter_opener
   memcachier
   metric_fu
