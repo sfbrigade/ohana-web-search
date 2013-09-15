@@ -20,11 +20,14 @@ gem 'haml-rails'
 gem "unicorn", ">= 4.3.1"
 gem 'newrelic_rpm'
 gem "ohanakapa", "~> 1.0"
+gem 'rails_12factor' # Heroku recommended
 
 # Caching
 gem 'faraday-http-cache'
+gem 'rack-cache'
 gem 'dalli'
 gem 'memcachier'
+gem 'kgio'
 
 # app config and ENV variables for heroku
 gem "figaro", ">= 0.6.3"
