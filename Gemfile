@@ -17,7 +17,7 @@ gem 'requirejs-rails', '0.9.1'
 gem 'haml-rails'
 
 # server
-gem "unicorn", ">= 4.3.1"
+gem "passenger"
 gem 'newrelic_rpm'
 gem "ohanakapa", "~> 1.0"
 gem 'faraday-http-cache'
