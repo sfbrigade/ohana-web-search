@@ -35,7 +35,7 @@
     </script>
     <![endif]-->
 
-    <%= requirejs_include_tag("routes/#{controller_name}/#{action_name}").gsub( "/assets/routes/#{controller_name}/#{action_name}", "routes/#{controller_name}/#{action_name}").html_safe %>
+    <%= requirejs_include_tag("routes/#{controller_name}/#{action_name}").gsub( "/assets/routes/#{controller_name}/#{action_name}", "/routes/#{controller_name}/#{action_name}").html_safe %>
     <%= csrf_meta_tags %>
     <%= yield(:head) %>
     <%= yield :canonical %>
