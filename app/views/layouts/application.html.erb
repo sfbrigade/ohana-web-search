@@ -35,7 +35,11 @@
     </script>
     <![endif]-->
 
-    <%= requirejs_include_tag("/assets/routes/#{controller_name}/#{action_name}").html_safe %>
+    <%=
+      requirejs_include_tag("routes/#{controller_name}/#{action_name}") do |controller|
+        { "main" => "routes/#{controller_name}/#{action_name}" }
+      end
+    %>
     <%= csrf_meta_tags %>
     <%= yield(:head) %>
     <%= yield :canonical %>
