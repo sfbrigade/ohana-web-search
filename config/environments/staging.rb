@@ -1,9 +1,9 @@
 HumanServicesFinder::Application.configure do
   # Settings specified here will take precedence over those in config/application.rb
 
-  # config.middleware.use '::Rack::Auth::Basic' do |u, p|
-  #   [u, p] == [ENV["STAGING_USER"], ENV["STAGING_PASSWORD"]]
-  # end
+  config.middleware.use '::Rack::Auth::Basic' do |u, p|
+    [u, p] == [ENV["STAGING_USER"], ENV["STAGING_PASSWORD"]]
+  end
 
   # Code is not reloaded between requests
   config.cache_classes = true
