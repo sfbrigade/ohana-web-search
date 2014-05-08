@@ -1794,6 +1794,13 @@ body { top: 0px !important; }
 {
   height: 150px;
   border-bottom: 1px solid midtone($blue);
+  .infoBox
+  {
+    img
+    {
+      z-index:9000;
+    }
+  }
 }
 #map-canvas.max
 {
